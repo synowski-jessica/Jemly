@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+:root {
+  /* COLORS */
+  /* Background */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #FCF5EE80;
+
+  /* Text */
+  --color-text--primary: #0a0a0a;
+  --color-text-secondary: #850e35;
+  --color-title: #0a0a0a;
+  --color-subtitle: #0a0a0a;
+  --color-accent: #ee6983;
+
+
+  /* Buttons */
+  --button-primary-bg: #850e35;
+  --button-primary-text: #ffffff;
+  --button-outline-bg: transparent;
+  --button-outline-border: #850e35;
+  --button-outline-text: #850e35;
+
+  /* Tags */
+  --tag-primary-bg: #F5EFE6;
+  --tag-primary-text: #850e35;
+  --tag-secondary-bg: transparent;
+  --tag-secondary-border: #5B080840;
+  --tag-secondary-text: #0a0a0a;
+
+  /* FONTS */
+  --font-title: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+
+  /* FONT-SIZE */
+  /* Title */
+  --text-h1: clamp(2rem, 1.4rem + 2.5vw, 3rem);
+  /* 32px → 48px */
+  --text-h2: clamp(1.5rem, 1.1rem + 1.5vw, 2.25rem);
+  /* 24px → 36px */
+
+  /* Body */
+  --text-body: clamp(0.9rem, 0.8rem + 0.35vw, 1rem);
+  /* 14px → 16px */
+  --text-note: clamp(0.7rem, 0.65rem + 0.2vw, 0.75rem);
+  /* 11px → 12px */
+
+}
+
+@theme inline {
+  /* COLORS */
+  --color-bg-primary: var(--color-bg-primary);
+  --color-bg-secondary: var(--color-bg-secondary);
+  --color-text-primary: var(--color-text-primary);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-title: var(--color-title);
+  --color-subtitle: var(--color-subtitle);
+  --color-accent: var(--color-accent);
+  --color-button-primary: var(--button-primary-bg);
+  --color-button-primary-text: var(--button-primary-text);
+  --color-button-outline: var(--button-outline-border);
+  --color-tag-primary: var(--tag-primary-bg);
+  --color-tag-primary-text: var(--tag-primary-text);
+  --color-tag-secondary-border: var(--tag-secondary-border);
+  --color-tag-secondary-text: var(--tag-secondary-text);
+
+  /* TYPO */
+  --font-title: var(--font-title);
+  --font-body: var(--font-body);
+
+  /* FONT-SIZE */
+  --font-size-h1: var(--text-h1);
+  --font-size-h2: var(--text-h2);
+  --font-size-body: var(--text-body);
+  --font-size-note: var(--text-note);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Backgrounds */
+    --color-bg-primary: #18120E;
+    --color-bg-secondary: #221810;
+
+    /* Text */
+    --color-text-primary: #EDE0D4;
+    --color-text-secondary: #9A7060;
+    --color-title: #EDE0D4;
+    --color-subtitle: #EDE0D4;
+    --color-accent: #ee6983;
+
+    /* Buttons */
+    --button-primary-bg: #C2365A;
+    --button-primary-text: #ffffff;
+    --button-outline-bg: transparent;
+    --button-outline-border: #C2365A;
+    --button-outline-text: #C2365A;
+
+    /* Tags */
+    --tag-primary-bg: #2E1E15;
+    --tag-primary-text: #ee6983;
+    --tag-secondary-bg: transparent;
+    --tag-secondary-border: #2E1E15;
+    --tag-secondary-text: #9A7060;
+  }
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: normal;
+  font-style: normal;
+  src:
+    local(""),
+    url("./fonts/Inter.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-weight: normal;
+  font-style: normal;
+  src:
+    local(""),
+    url("./fonts/PlayfairDisplay.ttf") format("truetype");
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: 1.7;
+}
+
+h1 {
+  font-family: var(--font-title);
+  font-size: var(--text-h1);
+  color: var(--color-title);
+  line-height: 1.15;
+}
+
+h2 {
+  font-family: var(--font-title);
+  font-size: var(--text-h2);
+  color: var(--color-title);
+  line-height: 1.25;
+}
