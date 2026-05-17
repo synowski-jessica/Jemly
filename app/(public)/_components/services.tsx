@@ -18,9 +18,9 @@ export default function Services () {
                             <div className='flex flex-col gap-5 p-5'>
                                 <h3>{`Création de logo sur mesure`}</h3>
 
-                                <p className='mt-5'>{`Un logo unique qui reflète ta personnalité et tes valeurs.`}</p>
+                                <p className='mt-5'>{`Un logo unique qui reflète votre personnalité et vos valeurs.`}</p>
 
-                                <p>{`De l'écoute au fichier final, on construit ensemble une identité qui te ressemble vraiment.`}</p>
+                                <p>{`De l'écoute au fichier final, on construit ensemble une identité qui vous ressemble vraiment.`}</p>
 
                                 <a href="/creation-logo-sur-mesure" className='text-text-secondary mt-5'>{`En savoir plus sur ce service -->`}</a> 
                             </div>    
@@ -36,7 +36,7 @@ export default function Services () {
 
                                 <p className='mt-5'>{`Logo, palette de couleurs, typographies, conseils ... `}</p>
 
-                                <p>{`Tout ce qu'il faut pour une image cohérente et vraiment impactante sur tous tes supports (carte de visite, flyer ...)`}</p>
+                                <p>{`Tout ce qu'il faut pour une image cohérente et vraiment impactante sur tous vos supports (carte de visite, flyer ...)`}</p>
 
                                 <a href="/identite_visuelle_complete" className='text-text-secondary mt-5'>{`En savoir plus sur ce service -->`}</a> 
                             </div>    
