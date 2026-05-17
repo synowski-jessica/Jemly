@@ -36,13 +36,13 @@
   /* Title */
   --text-h1: clamp(2rem, 1.4rem + 2.5vw, 3rem);
   /* 32px → 48px */
-  --text-h2: clamp(2rem, 1.1rem + 1.5vw, 2.25rem);
+  --text-h2: clamp(2rem, 1.5rem + 1.5vw, 5rem);
   /* 24px → 36px */
 
   /* Body */
   --text-body: clamp(0.7rem, 0.7rem + 0.3vw, 1rem);
   /* 14px → 16px */
-  --text-note: clamp(0.7rem, 0.65rem + 0.2vw, 0.75rem);
+  --text-note: clamp(0.7rem, 0.65rem + 0.2vw, 0.9rem);
   /* 11px → 12px */
 
 }
