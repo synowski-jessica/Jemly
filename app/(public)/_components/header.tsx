@@ -17,7 +17,8 @@ export default function Header () {
                         width={50}
                         height={50}
                         loading="eager"
-                        style={{ width: 'auto', height: 'auto' }}/>
+                        className='w-15 lg:w-18'
+                        style={{ height: 'auto' }}/>
                     <div className='hidden lg:block'>
                         <ul className='flex gap-6'>
                             <li>
