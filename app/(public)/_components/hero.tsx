@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function Hero () {
     return (
         <>
-            <section id="accueil" className="bg-bg-secondary py-10 lg:py-16 xl:py-34 px-5 md:px-14">
+            <section id="accueil" className="bg-bg-secondary py-10 lg:py-16 xl:py-34 2xl:py-20 px-5 md:px-14">
                 <div className=' max-w-360.25 mx-auto'>
                      <h1 className="sr-only">
                     Création de logo sur mesure — Jemly Studio
@@ -20,20 +20,20 @@ export default function Hero () {
                     <div className='mt-18 flex flex-col md:flex-row-reverse md:justify-around md:mt-0'>
                         <div className='max-w-full p-0 md:min-w-1/2 md:p-5'>
                             <div className='flex justify-center gap-10 relative mt-0 md:mt-32 lg:mt-36 2xl:mt-44 2xl:gap-20'>
-                                <Image src="/arrow.png" alt="flèche" width={70} height={50} 
-                                       className="absolute -top-14 left-1/2 -translate-x-1/2" 
-                                       style={{ width: 'auto', height: 'auto' }}/>
+                                <Image src="/arrow.svg" alt="flèche" width={50} height={50} 
+                                       className="absolute -top-8 left-1/2 -translate-x-1/2 w-20  md:-top-10 md:w-24 2xl:w-40 lg:w-28 lg:-top-12 2xl:-top-20" 
+                                       style={{ height: 'auto' }}/>
                                 <div className='flex flex-col gap-3 items-center'>
                                     <p>{`CROQUIS INITIAL`}</p>
-                                    <Image src="/croquis_peches_biscuites.png" alt="croquis du logo les péchés biscuités" width={100} height={100} 
-                                           className="w-24 md:w-40 lg:w-48 2xl:w-64" 
+                                    <Image src="/croquis_peches_biscuites.svg" alt="croquis du logo les péchés biscuités" width={100} height={100} 
+                                           className="w-22 md:w-36 lg:w-44 2xl:w-64" 
                                            style={{height: 'auto' }}/>
                                 </div>
 
                                 <div className='flex flex-col gap-3 items-center'>
                                     <p>{`LOGO LIVRE`}</p>
                                     <Image src="/logo_peches_biscuites.svg" alt="logo les péchés biscuités" width={120} height={120} 
-                                           className="w-28 md:w-48 lg:w-56 2xl:w-76 " 
+                                           className="w-28 md:w-48 lg:w-56 2xl:w-84 " 
                                            style={{ height: 'auto' }}/>
                                 </div>
                             </div>
@@ -54,7 +54,7 @@ export default function Hero () {
 
                             <p className='p-0 mt-0 lg:mt-5 lg:pr-20 xl:pr-20 xl:mt-8'>{`Ensemble, nous avons créé un logo qui donne faim rien qu'en le regardant. C'est ça, une identité qui vous ressemble.`}</p>
                             
-                            <div className='mt-8 flex justify-around xl:mt-28'>
+                            <div className='mt-8 flex p-0 justify-around lg:pr-20 xl:pr-20 xl:mt-28'>
                                 <PrimaryLink label="Devis" link="#contact" />
                                 <SecondaryLink label="Mes créations" link="#creations" />
                             </div>
