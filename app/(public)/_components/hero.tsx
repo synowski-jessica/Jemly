@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function Hero () {
     return (
         <>
-            <section id="accueil" className="bg-bg-secondary py-10 lg:py-16 xl:py-34 2xl:py-20 px-5 md:px-14">
+            <section id="accueil" className="bg-bg-secondary pt-40 pb-20 lg:py-16 xl:py-34 2xl:py-20 px-5 md:px-14">
                 <div className=' max-w-360.25 mx-auto'>
                      <h1 className="sr-only">
                         {`Création de logo sur mesure — Jemly Studio`}
@@ -18,7 +18,7 @@ export default function Hero () {
 
                         {/* right part */}
                         <div className='mt-18 md:mt-0 flex flex-col md:flex-row-reverse md:justify-around'>
-                            <div className='max-w-full p-0 md:min-w-1/2 md:p-5'>
+                            <div className='max-w-full p-0 md:min-w-1/2 md:p-5 xl:px-18'>
                                 <div className='flex justify-center gap-10 2xl:gap-20 relative mt-0 md:mt-32 lg:mt-36 2xl:mt-44'>
                                     <Image src="/arrow.svg" alt="flèche" width={50} height={50} 
                                         className="w-20 md:w-24 2xl:w-40 lg:w-28 absolute -top-8 md:-top-10  lg:-top-12 2xl:-top-20 left-1/2 -translate-x-1/2" 

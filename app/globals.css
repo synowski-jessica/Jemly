@@ -38,6 +38,8 @@
   /* 32px → 48px */
   --text-h2: clamp(2rem, 1.5rem + 1.5vw, 5rem);
   /* 24px → 36px */
+  --text-h3: clamp(0.8rem, 1rem + 1.2vw, 1.4rem);
+  /* 24px → 36px */
 
   /* Body */
   --text-body: clamp(0.7rem, 0.7rem + 0.3vw, 1rem);
@@ -73,6 +75,7 @@
   /* FONT-SIZE */
   --text-h1: var(--text-h1);
   --text-h2: var(--text-h2);
+  --text-h3: var(--text-h3);
   --text-body: var(--text-body);
   --text-note: var(--text-note);
 }
@@ -146,6 +149,13 @@ h2 {
   line-height: 1.25;
 }
 
+h3 {
+  font-family: var(--font-title);
+  font-size: var(--text-h3);
+  color: var(--color-text-secondary);
+  line-height: 1.25;
+}
+
 section {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 20px;
 }
