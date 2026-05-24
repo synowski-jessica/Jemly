@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function IdentiteVisuelleComplete() {
   return (
     <>
-    <div className="mt-50">test 2</div>
+    <h1 className="mt-50">Jemly</h1>
     </>
   );
 }
