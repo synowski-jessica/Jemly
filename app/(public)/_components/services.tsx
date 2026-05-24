@@ -12,7 +12,7 @@ export default function Services () {
                     <div className="flex flex-col gap-10 xl:gap-30 md:flex-row">
                         {/* Custom logo creation card */}
                         <div className='shadow-sm w-full md:w-1/2'>
-                            <Image src="/logo_card.svg" alt="exemple logo" width={300} height={300}
+                            <Image src="/logo_card.svg" loading="eager" alt="exemple logo" width={300} height={300}
                                    className="rounded-t-lg w-full h-auto aspect-4/3 object-cover" />
                 
                             <div className='flex flex-col gap-5 p-5'>

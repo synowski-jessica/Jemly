@@ -12,13 +12,13 @@ export default function Header () {
 
     return (
         <>
-            <header className="bg-bg-primary p-2 shadow-sm  fixed top-0 w-full z-20">
+            <header className="bg-bg-primary p-4 shadow-sm  fixed top-0 w-full z-20">
                 <nav className='flex justify-between items-center text-text-secondary'>
-                    <Image src="/logo.png" alt="logo jemly" 
+                    <Image src="/logo.svg" alt="logo jemly" 
                         width={50}
                         height={50}
                         loading="eager"
-                        className='w-15 lg:w-11'
+                        className='w-15 lg:w-32'
                         style={{ height: 'auto' }}/>
                     <div className='hidden lg:block'>
                         <ul className='flex gap-6'>
