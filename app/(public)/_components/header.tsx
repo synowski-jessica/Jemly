@@ -20,7 +20,7 @@ export default function Header () {
                         loading="eager"
                         className='w-15 lg:w-32'
                         style={{ height: 'auto' }}/>
-                    <div className='hidden lg:block'>
+                    <div className='hidden md:block'>
                         <ul className='flex gap-6'>
                             <li>
                                 <Link href='/#accueil' onClick={handleClick} className='hover:underline'>Accueil</Link>
@@ -39,7 +39,7 @@ export default function Header () {
                             </li>
                         </ul>
                     </div>
-                    <button className='block lg:hidden text-2xl' name="menu de la navbar" onClick={(e) => { e.stopPropagation(); handleClick(); }}>
+                    <button className='block md:hidden text-2xl' name="menu de la navbar" onClick={(e) => { e.stopPropagation(); handleClick(); }}>
                         <RxHamburgerMenu className='text-2xl' />
                     </button>
                 </nav>
@@ -52,7 +52,7 @@ export default function Header () {
                     onClick={() => setClick(false)}
                     />
                     
-                    <div className='fixed right-0 w-full z-30 lg:hidden'>
+                    <div className='fixed right-0 w-full z-30 md:hidden'>
                         <ul className='flex flex-col items-center gap-2 right-0 absolute top-13.5 z-40  bg-bg-primary w-full shadow-sm py-5'>
                             <li>
                                 <Link href='/#accueil' onClick={handleClick}>Accueil</Link>
