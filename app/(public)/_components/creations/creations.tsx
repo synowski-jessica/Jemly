@@ -17,12 +17,12 @@ export default function Creation () {
                             />
                         </div>
                         
-                        <p className="my-10">{`Chez Jemly Studio, chaque projet est une aventure humaine et créative. Je prends le temps de vous écouter pour créer une identité authentique, cohérente et impactante.`}</p>
+                        <p className="my-20">{`Chez Jemly Studio, chaque projet est une aventure humaine et créative. Je prends le temps de vous écouter pour créer une identité authentique, cohérente et impactante.`}</p>
 
                        <div className='flex flex-col gap-20'>
                             <SliderCard
                                 labelTag= "Biscuiterie artisanale"
-                                name= "Les péchés biscuités"
+                                name= "Les Péchés Biscuités"
                                 firstImageLink= "logo_peches_biscuites.svg"
                                 secondImageLink= "croquis_peches_biscuites.svg"
                                 description= {`Une biscuiterie gourmande, féminine et chaleureuse. De l'idée au logo final — forme festonnée, poche à douille, tons biscuit. Le moment où Angélique a eu THE coup de cœur.`}
@@ -34,7 +34,8 @@ export default function Creation () {
                                 linkCustomerSocialNetwork= "Instagram"
                             />
 
-                              <SliderCard
+                            <SliderCard
+                                reverse= {true}
                                 labelTag= "Association"
                                 name= "La Patte Chanceuse"
                                 firstImageLink= "logo_la_patte_chanceuse.svg"
@@ -46,6 +47,17 @@ export default function Creation () {
                                 linkCustomerLabel= {`🐾 Retrouvez La Patte Chanceuse sur `}
                                 linkCustomerUrl= "https://www.facebook.com/profile.php?id=61552283733983"
                                 linkCustomerSocialNetwork= "Facebook"
+                            />
+
+                            <SliderCard
+                                labelTag= "Entreprise"
+                                name= "Bloopaya"
+                                firstImageLink= "logo_bloopaya.svg"
+                                secondImageLink= "logo_bloopaya_avant.svg"
+                                description= {`Une plateforme d'éducation numérique qui aide les parents à mieux comprendre et encadrer les usages digitaux de leurs enfants.  Refonte complète du logo pour une image claire, rassurante et moderne.`}
+                                firstLabelDelivered= "Refonte logo"
+                                secondLabelDelivered= "SVG + PNG"
+                                thirdLabelDelivered= "Fichiers sources"
                             />
                         </div>
                     </div>

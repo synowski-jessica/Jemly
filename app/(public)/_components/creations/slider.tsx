@@ -31,7 +31,7 @@ export const Slider = ({firstImageLink, secondImageLink}: {firstImageLink:string
   return (
     <div className="w-full relative" onMouseUp={handleMouseUp}>
       <div
-        className="relative w-full max-w-187.5 shadow-sm rounded-lg aspect-70/45 m-auto overflow-hidden select-none"
+        className="relative w-full shadow-sm rounded-lg aspect-70/45 m-auto overflow-hidden select-none"
         onMouseMove={handleMove}
         onMouseDown={handleMouseDown}
       >
@@ -44,7 +44,7 @@ export const Slider = ({firstImageLink, secondImageLink}: {firstImageLink:string
         />
 
         <div
-          className="absolute top-0 left-0 right-0 w-full max-w-187.5 aspect-70/45 m-auto overflow-hidden select-none"
+          className="absolute top-0 left-0 right-0 w-full aspect-70/45 m-auto overflow-hidden select-none"
           style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
         >
           <Image
