@@ -39,7 +39,7 @@
   /* 32px → 48px */
   --text-h2: clamp(2rem, 1.5rem + 1.5vw, 5rem);
   /* 24px → 36px */
-  --text-h3: clamp(0.8rem, 1rem + 1.2vw, 1.4rem);
+  --text-h3: clamp(1rem, 1.5rem + 1.2vw, 1.9rem);
   /* 24px → 36px */
 
   /* Body */

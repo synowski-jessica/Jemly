@@ -19,9 +19,9 @@ export default function Creation () {
                         
                         <p className="my-20">{`Chez Jemly Studio, chaque projet est une aventure humaine et créative. Je prends le temps de vous écouter pour créer une identité authentique, cohérente et impactante.`}</p>
 
-                       <div className='flex flex-col gap-20'>
+                       <div className='flex flex-col gap-20 lg:gap-32'>
                             <SliderCard
-                                labelTag= "Biscuiterie artisanale"
+                                labelTag= "BISCUITERIE ARTISANALE"
                                 name= "Les Péchés Biscuités"
                                 firstImageLink= "logo_peches_biscuites.svg"
                                 secondImageLink= "croquis_peches_biscuites.svg"
@@ -36,7 +36,7 @@ export default function Creation () {
 
                             <SliderCard
                                 reverse= {true}
-                                labelTag= "Association"
+                                labelTag= "ASSOCIATION"
                                 name= "La Patte Chanceuse"
                                 firstImageLink= "logo_la_patte_chanceuse.svg"
                                 secondImageLink= "logo_la_patte_chanceuse_avant.jpg"
@@ -45,12 +45,12 @@ export default function Creation () {
                                 secondLabelDelivered= "SVG + PNG"
                                 thirdLabelDelivered= "Fichiers sources"
                                 linkCustomerLabel= {`🐾 Retrouvez La Patte Chanceuse sur `}
-                                linkCustomerUrl= "https://www.facebook.com/profile.php?id=61552283733983"
-                                linkCustomerSocialNetwork= "Facebook"
+                                linkCustomerUrl= "https://la-patte-chanceuse.vercel.app/"
+                                linkCustomerSocialNetwork= "leur site"
                             />
 
                             <SliderCard
-                                labelTag= "Entreprise"
+                                labelTag= "ENTREPRISE"
                                 name= "Bloopaya"
                                 firstImageLink= "logo_bloopaya.svg"
                                 secondImageLink= "logo_bloopaya_avant.svg"

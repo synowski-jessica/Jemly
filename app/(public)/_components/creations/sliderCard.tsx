@@ -34,9 +34,9 @@ export default function SliderCard (
 ) {
     return (
         <>
-            <div className={`flex flex-col items-start gap-8 ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'}  w-full`}>
-                <div className="flex flex-col gap-8 lg:hidden">
-                    <ColorTag title={labelTag}/>
+            <div className={`flex flex-col items-start gap-6 ${reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} lg:gap-24 w-full`}>
+                <div className="flex flex-col gap-6 lg:hidden">
+                    <span className="tracking-widest text-note">{labelTag}</span>
 
                     <h3 className='text-black!'>{name}</h3>
                 </div>
@@ -45,19 +45,17 @@ export default function SliderCard (
                     <Slider firstImageLink={firstImageLink} secondImageLink={secondImageLink}/>
                 </div>
 
-                <div className="w-full lg:flex lg:flex-1 lg:flex-col lg:gap-8">
-                    <div className="hidden lg:flex lg:flex-col lg:gap-8">
-                        <ColorTag title={labelTag}/>
-
+                <div className="w-full flex flex-col gap-6 lg:self-center lg:flex-1">
+                    <div className="hidden lg:flex lg:flex-col lg:gap-6">
+                        <span className="tracking-widest text-note">{labelTag}</span>
+                  
                         <h3 className='text-black!'>{name}</h3>
                     </div>
 
                     <p>{description}</p>
                 
                     <div className=' flex flex-col items-start gap-4'>
-                        <p className='text-text-muted'>{`Livré`}</p>
-
-                        <div className='flex gap-4'>
+                        <div className='flex flex-wrap gap-4'>
                             <ColorTag title={firstLabelDelivered} note="var(--text-note)"/>
 
                             <ColorTag title={secondLabelDelivered} note="var(--text-note)"/>
