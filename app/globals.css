@@ -12,6 +12,7 @@
   --color-title: #0a0a0a;
   --color-subtitle: #0a0a0a;
   --color-accent: #ee6983;
+  --color-text-muted: #0a0a0a66;
 
 
   /* Buttons */
@@ -38,7 +39,7 @@
   /* 32px → 48px */
   --text-h2: clamp(2rem, 1.5rem + 1.5vw, 5rem);
   /* 24px → 36px */
-  --text-h3: clamp(0.8rem, 1rem + 1.2vw, 1.4rem);
+  --text-h3: clamp(1rem, 1.5rem + 1.2vw, 1.9rem);
   /* 24px → 36px */
 
   /* Body */
@@ -58,11 +59,12 @@
   --color-title: var(--color-title);
   --color-subtitle: var(--color-subtitle);
   --color-accent: var(--color-accent);
+  --color-text-muted: var(--color-text-muted);
   --color-button-primary: var(--button-primary-bg);
   --color-button-primary-text: var(--button-primary-text);
-  --color-button-outline-bg: var(--button-outline-bgg);
+  --color-button-outline-bg: var(--button-outline-bg);
   --color-button-outline-text: var(--button-outline-text);
-  --color-button-outline-border: var(----button-outline-border);
+  --color-button-outline-border: var(--button-outline-border);
   --color-tag-primary: var(--tag-primary-bg);
   --color-tag-primary-text: var(--tag-primary-text);
   --color-tag-secondary-border: var(--tag-secondary-border);
@@ -92,6 +94,7 @@
     --color-title: #EDE0D4;
     --color-subtitle: #EDE0D4;
     --color-accent: #ee6983;
+    --color-text-muted: #ffffff66;
 
     /* Buttons */
     --button-primary-bg: #C2365A;
@@ -157,5 +160,5 @@ h3 {
 }
 
 section {
-  scroll-margin-top: 20px;
+  scroll-margin-top: 80px;
 }
