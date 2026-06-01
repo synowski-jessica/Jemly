@@ -4,7 +4,7 @@ import Image from "next/image";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import { useState } from "react";
-import ColorTag from "@/app/components/button/colorTag";
+import ColorTag from "@/app/components/tag/colorTag";
 
 export const Slider = ({firstImageLink, secondImageLink}: {firstImageLink:string, secondImageLink:string}) => {
   const [sliderPosition, setSliderPosition] = useState(50);

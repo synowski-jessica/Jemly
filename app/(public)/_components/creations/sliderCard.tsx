@@ -1,6 +1,7 @@
-import ColorTag from "@/app/components/button/colorTag";
+import ColorTag from "@/app/components/tag/colorTag";
 import { Slider } from "./slider";
 import Link from "next/link";
+import OutlineTag from "@/app/components/tag/outlineTag";
 
 export default function SliderCard (
     {
@@ -55,12 +56,12 @@ export default function SliderCard (
                     <p>{description}</p>
                 
                     <div className=' flex flex-col items-start gap-4'>
-                        <div className='flex flex-wrap gap-4'>
-                            <ColorTag title={firstLabelDelivered} note="var(--text-note)"/>
+                        <div className='flex flex-wrap gap-2 md:gap-4'>
+                            <OutlineTag title={firstLabelDelivered} note="var(--text-note)"/>
 
-                            <ColorTag title={secondLabelDelivered} note="var(--text-note)"/>
+                            <OutlineTag title={secondLabelDelivered} note="var(--text-note)"/>
 
-                            <ColorTag title={thirdLabelDelivered} note="var(--text-note)"/>
+                            <OutlineTag title={thirdLabelDelivered} note="var(--text-note)"/>
                         </div>
                     </div>
 
