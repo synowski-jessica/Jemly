@@ -6,18 +6,18 @@ export default function About () {
     return (
         <>
             <section id="apropos"className="pb-20 lg:py-16 xl:py-34 2xl:py-20 px-5 md:px-14 xl:px-32">
-                <div className='max-w-324.25 mx-auto flex flex-col gap-10'>
-                    <div className="w-full flex flex-col items-center">
+                <div className='max-w-324.25 mx-auto flex flex-col gap-10 lg:gap-16 lg:flex-row-reverse lg:items-center'>
+                    <div className="w-full flex flex-col items-center lg:flex-1">
                         <div className='relative shrink-0 pb-3 pr-5'>
                             <div className="absolute inset-0 pr-5 -translate-y-1 rounded-full border-2 border-accent-2 z-0"></div>
                             <div className="flex justify-center relative z-10 w-full h-full">
-                                <Image src="/jess.png" alt="photo de la gérante de Jemly" width={300} height={350} className='object-cover rounded-full border-2 border-accent-2 bg-bg-tertiary'/>
+                                <Image src="/jess.png" alt="photo de la gérante de Jemly" width={300} height={400} className='object-cover rounded-full border-2 border-accent-2 bg-bg-tertiary w-[300px] h-[400px] lg:w-[350px]  lg:h-[490px]'/>
                                 <span className='absolute bottom-10 bg-bg-primary px-6 py-2 rounded-full'>{`JESSICA / JEMLY`}</span>
                             </div>
                         </div>
                     </div>
                     
-                    <div className='flex flex-col gap-6'>
+                    <div className='flex flex-col gap-6 lg:gap-10 lg:flex-1'>
                         <h2>{`Créatrice passionnée par les `} <span className="text-accent font-bold italic">{`identités visuelles`}</span></h2>
 
                         <div className='flex flex-col gap-6'>
