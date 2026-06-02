@@ -154,17 +154,24 @@ const items = [
 
 export function AccordionBasic() {
   return (
-    <Accordion defaultValue={["item-1"]} className="max-w-lg">
-      {items.map((item) => (
-        <AccordionItem key={item.value} value={item.value}>
-          <AccordionTrigger>
-            <div>
-                <p>{item.trigger}</p>
-                <p>{item.triggerSubtitle}</p>
+    <Accordion defaultValue={["item-1"]} className="">
+      {items.map((item, index) => (
+        <AccordionItem key={item.value} value={item.value} className="rounded-xl shadow-md overflow-hidden border-l border-r border-gray-100 ">
+          <AccordionTrigger className="bg-rose-card rounded-md">
+            <div className="flex items-center gap-x-4">
+                <div className="rounded-full bg-bg-primary font-title shadow-sm w-10 h-10 flex items-center justify-center font-bold text-lg">
+                  {index + 1}
+                </div>
+
+                <div>
+                  <p className="font-bold">{item.trigger}</p>
+                  <p className="text-sm text-text-primary opacity-70">{item.triggerSubtitle}</p>
+                </div>
+                
             </div>
           </AccordionTrigger>
 
-          <AccordionContent>{item.content}</AccordionContent>
+          <AccordionContent className="py-5 overflow-hidden">{item.content}</AccordionContent>
         </AccordionItem>
       ))}
     </Accordion>
