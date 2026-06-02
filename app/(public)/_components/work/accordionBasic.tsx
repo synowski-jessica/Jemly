@@ -55,7 +55,7 @@ const items = [
   {
     value: "item-3",
     trigger: "Recherche & Moodboard",
-    triggerSubtitle: "Étude de la concurrence, inspirations et premières orientation",
+    triggerSubtitle: "Exploration créative et concurrentielle",
     content:
       (
         <>
