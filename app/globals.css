@@ -5,6 +5,7 @@
   /* Background */
   --color-bg-primary: #ffffff;
   --color-bg-secondary: #FCF5EE80;
+  --color-bg-tertiary: #FCF5EE;
 
   /* Text */
   --color-text-primary: #0a0a0a;
@@ -12,6 +13,7 @@
   --color-title: #0a0a0a;
   --color-subtitle: #0a0a0a;
   --color-accent: #ee6983;
+  --color-accent-2: #FFC4C4;
   --color-text-muted: #0a0a0a66;
 
 
@@ -54,11 +56,13 @@
   /* COLORS */
   --color-bg-primary: var(--color-bg-primary);
   --color-bg-secondary: var(--color-bg-secondary);
+  --color-bg-tertiary: var(--color-bg-tertiary);
   --color-text-primary: var(--color-text-primary);
   --color-text-secondary: var(--color-text-secondary);
   --color-title: var(--color-title);
   --color-subtitle: var(--color-subtitle);
   --color-accent: var(--color-accent);
+  --color-accent-2: var(--color-accent-2);
   --color-text-muted: var(--color-text-muted);
   --color-button-primary: var(--button-primary-bg);
   --color-button-primary-text: var(--button-primary-text);
@@ -94,6 +98,7 @@
     --color-title: #EDE0D4;
     --color-subtitle: #EDE0D4;
     --color-accent: #ee6983;
+    --color-accent-2: #FFC4C4;
     --color-text-muted: #ffffff66;
 
     /* Buttons */
