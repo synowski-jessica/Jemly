@@ -11,7 +11,7 @@ export default function About () {
                         <div className='relative shrink-0 pb-3 pr-5'>
                             <div className="absolute inset-0 pr-5 -translate-y-1 rounded-full border-2 border-accent-2 z-0"></div>
                             <div className="flex justify-center relative z-10 w-full h-full">
-                                <Image src="/jess.png" alt="photo de la gérante de Jemly" width={300} height={400} className='object-cover rounded-full border-2 border-accent-2 bg-bg-tertiary w-[300px] h-[400px] lg:w-[350px]  lg:h-[490px]'/>
+                                <Image src="/jess.png" alt="photo de la gérante de Jemly" width={300} height={400} className='object-cover rounded-full border-2 border-accent-2 bg-bg-tertiary w-[300px] h-[400px] md:w-[450px] md:h-[550px] xl:w-[500px] xl:h-[650px] 2xl:w-[500px] 2xl:h-[650px] '/>
                                 <span className='absolute bottom-10 bg-bg-primary px-6 py-2 rounded-full'>{`JESSICA / JEMLY`}</span>
                             </div>
                         </div>
@@ -43,7 +43,7 @@ export default function About () {
                             <p className='text-note italic pl-2'>{`Ce qui fait ma différence ? Je ne me contente pas de créer de beaux visuels. Je conçois des identités pensées pour le web, optimisées techniquement et alignées avec vos objectifs business. `}</p>
                         </div>
 
-                        <div className='flex flex-wrap gap-2'>
+                        <div className='flex flex-wrap justify-center gap-2 xl:gap-x-8 xl:gap-y-4'>
                             <OutlineTag title={`Double compétence`} subtitle={`Design & Dev`} note="var(--text-note)" fixedWidth={true}/>
                             <OutlineTag title={`Approche`} subtitle={`Professionnelle`} note="var(--text-note)" fixedWidth={true}/>
                             <OutlineTag title={`Créations`} subtitle={`Modernes`} note="var(--text-note)" fixedWidth={true}/>
