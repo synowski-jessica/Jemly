@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function About () {
     return (
         <>
-            <section id="apropos"className="pb-20 lg:py-16 xl:py-34 2xl:py-20 px-5 md:px-14 xl:px-32">
+            <section id="apropos" className="pb-20 lg:py-16 xl:py-34 2xl:py-20 px-5 md:px-14 xl:px-32">
                 <div className='max-w-324.25 mx-auto flex flex-col gap-10 lg:gap-16 lg:flex-row-reverse lg:items-center'>
                     <div className="w-full flex flex-col items-center lg:flex-1">
                         <div className='relative shrink-0 pb-3 pr-5'>

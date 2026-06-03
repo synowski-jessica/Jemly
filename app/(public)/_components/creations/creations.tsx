@@ -4,7 +4,7 @@ import SliderCard from './sliderCard'
 export default function Creation () {
     return (
         <>
-            <section id="creations"className="pb-20 lg:py-16 xl:py-34 2xl:py-20 px-5 md:px-14 xl:px-32">
+            <section id="creations" className="pb-20 lg:py-16 xl:py-34 2xl:py-20 px-5 md:px-14 xl:px-32">
                     <div className=' max-w-324.25 mx-auto'>
                         <div className="relative inline-block">
                             <h2 className="">{`Mes créations`}</h2>

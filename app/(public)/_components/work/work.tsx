@@ -4,7 +4,7 @@ import { AccordionBasic } from './accordionBasic'
 export default function Work () {
     return (
         <>
-            <section id="apropos"className="pb-20 lg:py-16 xl:py-34 2xl:py-20 px-5 md:px-14 xl:px-32">
+            <section id="apropos" className="pb-20 lg:py-16 xl:py-34 2xl:py-20 px-5 md:px-14 xl:px-32">
                 <div className='max-w-324.25 mx-auto flex flex-col gap-20'>
                     <h2>{`Mon processus de travail `}</h2>
 

@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function Services () {
     return (
         <>
-            <section id="services"className="py-20 lg:py-16 xl:py-34 2xl:py-20 px-5 md:px-14 xl:px-32">
+            <section id="services" className="py-20 lg:py-16 xl:py-34 2xl:py-20 px-5 md:px-14 xl:px-32">
                 <div className=' max-w-324.25 mx-auto'>
                     <h2>{`Mes services`}</h2>
 
