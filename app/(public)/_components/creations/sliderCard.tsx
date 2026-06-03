@@ -1,4 +1,3 @@
-import ColorTag from "@/app/components/tag/colorTag";
 import { Slider } from "./slider";
 import Link from "next/link";
 import OutlineTag from "@/app/components/tag/outlineTag";

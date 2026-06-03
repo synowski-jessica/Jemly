@@ -7,6 +7,9 @@
   --color-bg-secondary: #FCF5EE80;
   --color-bg-tertiary: #FCF5EE;
 
+  /* Card */
+  --gradient-rose-card: linear-gradient(180deg, #FFC4C472 0%, #FCF5EE 100%);
+
   /* Text */
   --color-text-primary: #0a0a0a;
   --color-text-secondary: #850e35;
@@ -57,6 +60,7 @@
   --color-bg-primary: var(--color-bg-primary);
   --color-bg-secondary: var(--color-bg-secondary);
   --color-bg-tertiary: var(--color-bg-tertiary);
+  --background-image-rose-card: var(--gradient-rose-card);
   --color-text-primary: var(--color-text-primary);
   --color-text-secondary: var(--color-text-secondary);
   --color-title: var(--color-title);
@@ -91,6 +95,9 @@
     /* Backgrounds */
     --color-bg-primary: #18120E;
     --color-bg-secondary: #221810;
+
+    /* Card */
+    --gradient-rose-card: linear-gradient(180deg, #FFC4C430 0%, #18120E 100%);
 
     /* Text */
     --color-text-primary: #EDE0D4;

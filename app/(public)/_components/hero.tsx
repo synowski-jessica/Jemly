@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function Hero () {
     return (
         <>
-            <section id="accueil" className="bg-bg-secondary pt-40 pb-20 lg:py-16 xl:py-34 2xl:py-20 px-5 md:px-14">
+            <section id="accueil" className="min-h-screen bg-bg-secondary flex flex-col justify-center px-5 md:px-14">
                 <div className=' max-w-360.25 mx-auto'>
                      <h1 className="sr-only">
                         {`Création de logo sur mesure — Jemly Studio`}
