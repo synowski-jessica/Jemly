@@ -4,7 +4,10 @@ import "./globals.css";
 export const metadata = {
   icons: {
     icon: '/favicon.svg',
-  }
+  },
+  verification: {
+    google: "cxHoPuqsLplSujy39vYeECHJCdTNdJkYVWggFtOA9_c",
+  },
 }
 
 export default function RootLayout({
