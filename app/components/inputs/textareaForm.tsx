@@ -14,8 +14,8 @@ export function TextaeraForm ({name, placeholder} : {name:string, placeholder:st
                 <textarea 
                     id={name}
                     required 
-                    rows="6"
-                    cols="15"
+                    rows={6}
+                    cols={15}
                     value={value}
                     onChange={(e) => setValue(e.target.value)}
                     onFocus={() => setFocused(true)}
