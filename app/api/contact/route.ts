@@ -6,6 +6,7 @@ export async function POST(req: Request) {
   try {
     const transporter = creationOfTransporter();
     const formData = await req.formData();
+    const token = formData.get("recaptchaToken") as string;
  
     const data = Object.fromEntries(formData) as {
       name: string;
@@ -13,6 +14,24 @@ export async function POST(req: Request) {
       project:string;
       message: string;
     };
+
+     // Vérification du token reCAPTCHA
+    const verify = await fetch("https://www.google.com/recaptcha/api/siteverify", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: `secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${token}`,
+    });
+    console.log('verify', verify)
+
+    const { success, score } = await verify.json();
+
+    console.log('success', success);
+    console.log('score', score);
+
+    if (!success || score < 0.5) {
+        return Response.json({ error: "reCAPTCHA échoué" }, { status: 400 });
+    }
+
 
     const mailBodyHtml = generateContactEmailHtml(data);
 

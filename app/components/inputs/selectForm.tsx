@@ -25,7 +25,7 @@ export function SelectForm () {
                 </span>
 
                 <label htmlFor="project" className={`absolute left-4 transition-all duration-200 pointer-events-none text-gray-400 z-10 focus:border-text-secondary -top-2.5 text-xs bg-white px-1`}>
-                    {`Choisir un type de projet`}
+                    {`Choisir un type de projet*`}
                 </label>
             </div>
         </div>

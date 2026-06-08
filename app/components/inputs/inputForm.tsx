@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-export function InputForm ({name, label, type, placeholder, required=true} : {name:string, label:string, type:string, placeholder:string, required?:boolean}) {
+export function InputForm ({name, type, placeholder, required=true} : {name:string, type:string, placeholder:string, required?:boolean}) {
     const [focused, setFocused] = useState(false);
     const [value, setValue] = useState('');
 

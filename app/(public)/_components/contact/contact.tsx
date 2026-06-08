@@ -2,6 +2,7 @@ import { RiFlashlightLine } from "react-icons/ri";
 import { TbMessage } from "react-icons/tb";
 import { BsFileEarmarkText } from "react-icons/bs";
 import { ContactForm } from "./contactForm";
+import { ReCaptchaProvider } from "next-recaptcha-v3";
 
 export function Contact () {
     return (
@@ -43,7 +44,10 @@ export function Contact () {
                     
                         </div>
 
-                        <ContactForm/>
+                        <ReCaptchaProvider reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_KEY}>
+                            <ContactForm/>
+                        </ReCaptchaProvider>
+                        
                     </div>
                 </div>
 

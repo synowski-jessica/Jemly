@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-export function TextaeraForm ({name, label, placeholder} : {name:string, label:string, placeholder:string}) {
+export function TextaeraForm ({name, placeholder} : {name:string, placeholder:string}) {
     const [focused, setFocused] = useState(false);
     const [value, setValue] = useState('');
 
@@ -13,7 +13,6 @@ export function TextaeraForm ({name, label, placeholder} : {name:string, label:s
             <div className='relative'>
                 <textarea 
                     id={name}
-                    name={name}
                     required 
                     rows="6"
                     cols="15"

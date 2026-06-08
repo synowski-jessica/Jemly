@@ -11,7 +11,7 @@ export default function Work () {
                     <p>{`Chaque projet mérite une approche sur mesure. `}</p>
 
                     <div className='flex items-center gap-16 xl:gap-24 mx-auto w-full'>
-                        <Image src="/jessWork.png" alt="gérante de Jemly en pleine séance de travail" width={450} height={500} className='hidden lg:block lg:rounded-xl self-start sticky'/>
+                        <Image src="/jessWork.png" loading="eager" alt="gérante de Jemly en pleine séance de travail" width={450} height={500} className='hidden lg:block lg:rounded-xl self-start sticky'/>
 
                         <div className="w-full min-w-0">
                             <AccordionBasic/>
