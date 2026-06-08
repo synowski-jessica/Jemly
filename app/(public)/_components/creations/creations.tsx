@@ -14,6 +14,7 @@ export default function Creation () {
                                 className="absolute -top-2 md:top-0 lg:top-2 -right-18"
                                 width={80}
                                 height={80}
+                                style={{ width: '80px', height: '80px' }}
                             />
                         </div>
                         

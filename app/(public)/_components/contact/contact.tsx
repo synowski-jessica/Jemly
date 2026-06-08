@@ -1,6 +1,7 @@
 import { RiFlashlightLine } from "react-icons/ri";
 import { TbMessage } from "react-icons/tb";
 import { BsFileEarmarkText } from "react-icons/bs";
+import { ContactForm } from "./contactForm";
 
 export function Contact () {
     return (
@@ -9,9 +10,9 @@ export function Contact () {
                 <div className='max-w-324.25 mx-auto flex flex-col gap-10'>
                      <h2 className="">{`On lance`} <span className="text-accent font-bold italic">{`votre projet ?`}</span></h2>
 
-                    <div>
+                    <div className="flex flex-col gap-10 lg:flex-row lg:gap-20 lg:items-center">
                         {/* part right */}
-                        <div className="flex flex-col gap-10">
+                        <div className="flex flex-col gap-10 lg:flex-1">
                             <p>{`Vous avez une idée, un projet, une envie — même floue. Écrivez-moi, je prends le temps d'en parler avec vous. `}</p>
 
                             <div className="flex flex-col gap-3">
@@ -39,8 +40,10 @@ export function Contact () {
                                     <p>{`Devis personnalisé selon votre projet`}</p>
                                 </div>
                             </div>
-                        
+                    
                         </div>
+
+                        <ContactForm/>
                     </div>
                 </div>
 
