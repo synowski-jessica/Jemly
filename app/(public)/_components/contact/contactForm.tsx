@@ -8,6 +8,8 @@ import { TextaeraForm } from "@/app/components/inputs/textareaForm";
 
 import { useState, useCallback } from "react";
 import { useReCaptcha } from "next-recaptcha-v3";
+import { SuccessAlert } from "@/app/components/alert/successAlert";
+import { FailedAlert } from "@/app/components/alert/failedAlert";
 
 export function ContactForm () {
   const [isRgpdChecked, setIsRgpdChecked] = useState(false);
@@ -38,13 +40,13 @@ export function ContactForm () {
       });
 
       if (result.ok) {
-        alert("Votre demande de contact a bien été envoyée");
+        await SuccessAlert();
       } else {
-        alert("Oups.. Une erreur est survenue");
+        await FailedAlert();
       }
     } catch (error) {
       console.error(error);
-      alert("Oups.. Une erreur est survenue");
+       await FailedAlert();
     } finally {
       setIsSubmitting(false);
     }

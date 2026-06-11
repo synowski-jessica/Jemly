@@ -175,6 +175,63 @@ section {
   scroll-margin-top: 80px;
 }
 
+/* pop up success and failed */
+.swal-container {
+  border-radius: 32px;
+  border-top: 2px solid var(--color-text-secondary);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.swal2-html-container {
+  padding-top: 40px !important;
+  display: flex !important;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.swal-title {
+  text-align: left;
+  color: var(--color-text-primary);
+  line-height: 35px;
+}
+
+.swal-divider {
+  border-top: 2px solid var(--color-text-secondary);
+  width: 40px;
+}
+
+.swal-close:hover {
+  color: var(--color-text-secondary) !important;
+}
+
+.swal-tag {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: var(--text-note);
+  color: var(--color-text-secondary);
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.swal-body {
+  text-align: left;
+}
+
+.swal-button {
+  background-color: var(--color-button-outline-bg);
+  color: var(--color-button-outline-text);
+  border: 1px solid var(--color-button-outline-border);
+  border-radius: 9999px;
+  padding-block: 8px;
+  padding-inline: 20px;
+  transition: transform 0.2s ease;
+}
+
+.swal-button:hover {
+  transform: translateY(-4px);
+  transition: transform 0.2s ease;
+}
+
 @layer base {
   .grecaptcha-badge {
     visibility: hidden !important;
