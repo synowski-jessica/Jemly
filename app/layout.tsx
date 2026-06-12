@@ -1,3 +1,4 @@
+import { Footer } from "./(public)/_components/footer";
 import Header from "./(public)/_components/header";
 import "./globals.css";
 
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-blue">
         <Header/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
