@@ -4,7 +4,15 @@ import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
   try {
-    const transporter = creationOfTransporter();
+    const transporter = await creationOfTransporter();
+
+    try {
+        await transporter.verify();
+        console.log("Transporter OK");
+    } catch (error) {
+        console.error("Transporter ERREUR:", error);
+    }
+
     const formData = await req.formData();
     const token = formData.get("recaptchaToken") as string;
  
@@ -42,7 +50,8 @@ export async function POST(req: Request) {
       html: mailBodyHtml,
     };
 
-    (await transporter).sendMail(mailData);
+    await transporter.sendMail(mailData);
+    console.log("Mail envoyé !");
 
     return NextResponse.json({
       success: true,
