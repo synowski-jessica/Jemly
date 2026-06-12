@@ -4,6 +4,7 @@ import Services from "./(public)/_components/services";
 import Creations from "./(public)/_components/creations/creations";
 import About from "./(public)/_components/about";
 import Work from "./(public)/_components/work/work";
+import { Contact } from "./(public)/_components/contact/contact";
 
 export const metadata: Metadata = {
   title: "Jemly Studio — Création de logo et identité visuelle sur mesure",
@@ -19,6 +20,7 @@ export default function Home() {
         <Creations/>
         <About/>
         <Work/>
+        <Contact/>
       </main>
     </>
   );

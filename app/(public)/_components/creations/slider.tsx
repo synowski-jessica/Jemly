@@ -41,6 +41,7 @@ export const Slider = ({firstImageLink, secondImageLink}: {firstImageLink:string
           draggable={false}
           priority
           src={`/${firstImageLink}`}
+          sizes="100vw"
         />
 
         <div

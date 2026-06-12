@@ -14,12 +14,13 @@ export default function Header () {
         <>
             <header className="bg-bg-primary p-4 shadow-sm  fixed top-0 w-full z-40">
                 <nav className='flex justify-between items-center text-text-secondary'>
-                    <Image src="/logo.svg" alt="logo jemly" 
+                    <Link href='/'><Image src="/logo.svg" alt="logo jemly" 
                         width={50}
                         height={50}
                         loading="eager"
                         className='w-20 lg:w-32'
                         style={{ height: 'auto' }}/>
+                    </Link>
                     <div className='hidden md:block'>
                         <ul className='flex gap-6'>
                             <li>
