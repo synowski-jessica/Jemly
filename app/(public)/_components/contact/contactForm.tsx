@@ -14,6 +14,7 @@ import { FailedAlert } from "@/app/components/alert/failedAlert";
 export function ContactForm () {
   const [isRgpdChecked, setIsRgpdChecked] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formKey, setFormKey] = useState(0);
   const { executeRecaptcha } = useReCaptcha();
 
   
@@ -23,14 +24,12 @@ export function ContactForm () {
     if (!executeRecaptcha) return;
 
     const form = e.currentTarget;
-    console.log(form);
 
     setIsSubmitting(true);
 
     try {
       const token = await executeRecaptcha("form_submit");
 
-      console.log(token);
       const formData = new FormData(form);
       formData.append("recaptchaToken", token);
 
@@ -41,6 +40,7 @@ export function ContactForm () {
 
       if (result.ok) {
         await SuccessAlert();
+        setFormKey(prev => prev + 1);     
       } else {
         await FailedAlert();
       }
@@ -55,7 +55,7 @@ export function ContactForm () {
   return (
       <>
         <div className="lg:flex-1">
-            <form onSubmit={handleSubmit}>
+            <form key={formKey} onSubmit={handleSubmit}>
               <div className="flex flex-col gap-6">
                 <InputForm name="name" type="text" placeholder="Votre nom*"/>
                 <InputForm name="email" type="email" placeholder="Votre adresse email*"/>
