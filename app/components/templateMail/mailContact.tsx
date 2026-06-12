@@ -30,7 +30,7 @@ const generateContactEmailHtml = (data: {
                 <table width="600" cellpadding="20" cellspacing="0" style="padding: 20px; border-radius:5px; background-color: #850e35; color:#FFFFFF;">
                     <tr>
                         <td width="80" style="vertical-align: middle; padding-right: 10px;">
-                            <img src="https://res.cloudinary.com/ders8u3l9/image/upload/v1749241276/testMail2_vjrg5n.png" alt="image" width="80"/>
+                            <img src="https://res.cloudinary.com/ders8u3l9/image/upload/v1781247312/mailContact_jlalul.svg" alt="image" width="80"/>
                         </td>
 
                         <td style="vertical-align: middle;padding:0;">
