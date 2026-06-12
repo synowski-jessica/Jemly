@@ -13,6 +13,7 @@ export function TextaeraForm ({name, placeholder} : {name:string, placeholder:st
             <div className='relative'>
                 <textarea 
                     id={name}
+                    name={name}
                     required 
                     rows={6}
                     cols={15}
