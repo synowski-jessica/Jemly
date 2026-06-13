@@ -1,10 +1,12 @@
 import { Footer } from "./(public)/_components/footer";
 import Header from "./(public)/_components/header";
+import RegisterSW from "./components/RegisterSW";
 import "./globals.css";
+
 
 export const metadata = {
   icons: {
-    icon: '/favicon.svg',
+    icon: '/icon192.png',
   },
   verification: {
     google: "cxHoPuqsLplSujy39vYeECHJCdTNdJkYVWggFtOA9_c",
@@ -18,13 +20,16 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="fr"
       className="h-full antialiased"
     >
-      <body className="min-h-full flex flex-col bg-blue">
-        <Header/>
-        {children}
-        <Footer/>
+       <body className="min-h-full flex flex-col bg-blue">
+        <Header />
+        <main className="flex-1">
+          {children}
+        </main>
+        <Footer />
+        <RegisterSW />
       </body>
     </html>
   );
