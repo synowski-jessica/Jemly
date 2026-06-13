@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function MentionsLegales() {
   return (
     <>
-    <div className="flex flex-col gap-10 mt-30 mb-20 px-5 md:px-14 xl:px-32 py-5">
+    <div className="flex flex-col gap-10 mt-30 mb-20 py-5 px-5 md:px-0 w-full max-w-324.25 mx-auto">
         <h1>{`Mentions légales`}</h1>
 
         <section className="flex flex-col gap-5">
@@ -40,18 +40,18 @@ export default function MentionsLegales() {
             </div>
 
             <div>
-                <p>{`Email: contact@jemly-studio.fr`}</p>
+                <p>{`Email: `} <Link href="mailto:contact@jemly-studio.fr" className="text-text-secondary underline">{`contact@jemly-studio.fr`}</Link></p>
             </div>
 
             <div>
-                <p>{`Activité: Conception et création de logos sur mesure pour entreprises, associations et partciuliers — Activité libérale non réglementée`}</p>
+                <p>{`Activité: Conception et création de logos sur mesure pour entreprises, associations et particuliers — Activité libérale non réglementée`}</p>
             </div>
         </section>
 
         <section className="flex flex-col gap-5">
             <h3>{`Hebergement`}</h3>
 
-            <p>{`Le site est héberger par :`}</p>
+            <p>{`Le site est hébergé par :`}</p>
 
             <div>
                 <p>{`Vercel Inc.`}</p>
@@ -61,7 +61,7 @@ export default function MentionsLegales() {
             </div>
 
             <div>
-                <p>{`Site web :`} <Link href="https://vercel.com" className="underline">{`https://vercel.com`}</Link></p>
+                <p>{`Site web :`} <Link href="https://vercel.com" target="_blank" rel="noopener noreferrer" className="underline">{`https://vercel.com`}</Link></p>
             </div>
         </section>
 
@@ -78,7 +78,7 @@ export default function MentionsLegales() {
             </div>
 
             <div>
-                <p>{`Site web :`} <Link href="https://www.ovh.com" className="underline">{`https://www.ovh.com`}</Link></p>
+                <p>{`Site web :`} <Link href="https://www.ovh.com" className="underline" target="_blank" rel="noopener noreferrer">{`https://www.ovh.com`}</Link></p>
             </div>
         </section>
 
