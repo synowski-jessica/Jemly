@@ -44,14 +44,14 @@ export default function MentionsLegales() {
             </div>
 
             <div>
-                <p>{`Activité: Conception et création de logos sur mesure pour entreprises, associations et partciuliers — Activité libérale non réglementée`}</p>
+                <p>{`Activité: Conception et création de logos sur mesure pour entreprises, associations et particuliers — Activité libérale non réglementée`}</p>
             </div>
         </section>
 
         <section className="flex flex-col gap-5">
             <h3>{`Hebergement`}</h3>
 
-            <p>{`Le site est héberger par :`}</p>
+            <p>{`Le site est hébergé par :`}</p>
 
             <div>
                 <p>{`Vercel Inc.`}</p>
