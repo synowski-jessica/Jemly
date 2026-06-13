@@ -10,30 +10,39 @@ export const Slider = ({firstImageLink, secondImageLink}: {firstImageLink:string
   const [sliderPosition, setSliderPosition] = useState(50);
   const [isDragging, setIsDragging] = useState(false);
 
+  const getPercent = (clientX: number, rect: DOMRect) => {
+    const x = Math.max(0, Math.min(clientX - rect.left, rect.width));
+    return Math.max(0, Math.min((x / rect.width) * 100, 100));
+  };
+
+
   const handleMove = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     if (!isDragging) return;
-
     const rect = event.currentTarget.getBoundingClientRect();
-    const x = Math.max(0, Math.min(event.clientX - rect.left, rect.width));
-    const percent = Math.max(0, Math.min((x / rect.width) * 100, 100));
-
-    setSliderPosition(percent);
+    setSliderPosition(getPercent(event.clientX, rect));
   };
 
-  const handleMouseDown = () => {
-    setIsDragging(true);
+  const handleTouchMove = (event: React.TouchEvent<HTMLDivElement>) => {
+    if (!isDragging) return;
+    const rect = event.currentTarget.getBoundingClientRect();
+    setSliderPosition(getPercent(event.touches[0].clientX, rect));
   };
 
-  const handleMouseUp = () => {
-    setIsDragging(false);
-  };
+
+  const handleMouseDown = () => setIsDragging(true);
+  const handleMouseUp = () => setIsDragging(false);
+  const handleTouchStart = () => setIsDragging(true);
+  const handleTouchEnd = () => setIsDragging(false);
+
 
   return (
-    <div className="w-full relative" onMouseUp={handleMouseUp}>
+    <div className="w-full relative" onMouseUp={handleMouseUp}  onTouchEnd={handleTouchEnd}>
       <div
         className="relative w-full shadow-sm rounded-lg aspect-70/45 m-auto overflow-hidden select-none"
         onMouseMove={handleMove}
         onMouseDown={handleMouseDown}
+        onTouchMove={handleTouchMove}
+        onTouchStart={handleTouchStart}
       >
         <Image
           alt="logo"
