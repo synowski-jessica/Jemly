@@ -54,7 +54,7 @@ export default function Header () {
                     />
                     
                     <div className='fixed right-0 w-full z-30 md:hidden'>
-                        <ul className='flex flex-col items-center gap-2 right-0 absolute top-16 z-40  bg-bg-primary w-full shadow-sm py-5'>
+                        <ul className='flex flex-col items-center gap-2 right-0 absolute top-14 z-40  bg-bg-primary w-full shadow-sm py-5'>
                             <li>
                                 <Link href='/#accueil' onClick={handleClick}>Accueil</Link>
                             </li>

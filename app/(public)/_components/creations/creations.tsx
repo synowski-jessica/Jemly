@@ -11,10 +11,9 @@ export default function Creation () {
                              <Image 
                                 src="/feather.png"
                                 alt="plume décorative"
-                                className="absolute -top-2 md:top-0 lg:top-2 -right-18"
+                                className="absolute -top-1 md:top-0 xl:top-3 -right-16 md:-right-18 lg:-right-22 w-18 md:w-20 lg:w-24"
                                 width={80}
                                 height={80}
-                                style={{ width: '80px', height: '80px' }}
                             />
                         </div>
                         

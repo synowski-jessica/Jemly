@@ -6,7 +6,7 @@ export default function Hero () {
     return (
         <>
             <section id="accueil" className="min-h-screen bg-bg-secondary flex flex-col justify-center px-5 md:px-14">
-                <div className=' max-w-360.25 mx-auto'>
+                <div className='mt-30 max-w-360.25 mx-auto'>
                      <h1 className="sr-only">
                         {`Création de logo sur mesure — Jemly Studio`}
                     </h1>
@@ -54,7 +54,7 @@ export default function Hero () {
 
                                 <p className='p-0 mt-0 xl:mt-8 lg:mt-5 lg:pr-20 xl:pr-20'>{`Ensemble, nous avons créé un logo qui donne faim rien qu'en le regardant. C'est ça, une identité qui vous ressemble.`}</p>
                                 
-                                <div className='mt-8 flex p-0 justify-between md:justify-around lg:pr-14 xl:justify-around xl:pr-20 xl:mt-28'>
+                                <div className='mt-8 flex p-0 justify-around lg:pr-14 xl:justify-around xl:pr-20 xl:mt-28'>
                                     <PrimaryLink label="Devis" link="#contact" />
                                     <SecondaryLink label="Mes créations" link="#creations" />
                                 </div>

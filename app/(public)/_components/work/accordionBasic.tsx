@@ -154,12 +154,12 @@ const items = [
 
 export function AccordionBasic() {
   return (
-    <Accordion defaultValue={["item-1"]} className="">
+    <Accordion className="">
       {items.map((item, index) => (
         <AccordionItem key={item.value} value={item.value} className="rounded-xl shadow-md overflow-hidden border-l border-r border-gray-100 ">
           <AccordionTrigger className="bg-rose-card rounded-md">
             <div className="flex items-center gap-x-4">
-                <div className="rounded-full bg-bg-primary font-title shadow-sm w-10 h-10 flex items-center justify-center font-bold text-lg">
+                <div className="rounded-full bg-bg-primary shrink-0 font-title shadow-sm w-10 h-10 flex items-center justify-center font-bold text-lg">
                   {index + 1}
                 </div>
 
