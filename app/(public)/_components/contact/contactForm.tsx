@@ -10,16 +10,14 @@ import { useState, useCallback } from "react";
 import { useReCaptcha } from "next-recaptcha-v3";
 import { SuccessAlert } from "@/app/components/alert/successAlert";
 import { FailedAlert } from "@/app/components/alert/failedAlert";
-import { useSearchParams } from "next/navigation";
 
-export function ContactForm () {
+export function ContactForm ({type}:{type:string}) {
   const [isRgpdChecked, setIsRgpdChecked] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formKey, setFormKey] = useState(0);
   const { executeRecaptcha } = useReCaptcha();
 
-  const searchParams = useSearchParams();
-  const [type, setType] = useState(searchParams.get("offer") ?? "");
+
   
    const handleSubmit = useCallback(async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();

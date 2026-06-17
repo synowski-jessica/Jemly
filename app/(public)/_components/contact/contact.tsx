@@ -4,7 +4,7 @@ import { BsFileEarmarkText } from "react-icons/bs";
 import { ContactForm } from "./contactForm";
 import { ReCaptchaProvider } from "next-recaptcha-v3";
 
-export function Contact () {
+export function Contact ({type}:{type:string}) {
     return (
         <>
             <section id="contact" className="pb-20 lg:py-16 xl:py-34 2xl:py-20 px-5 md:px-14 xl:px-32">
@@ -45,13 +45,11 @@ export function Contact () {
                         </div>
 
                         <ReCaptchaProvider reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_KEY}>
-                            <ContactForm/>
+                            <ContactForm type={type}/>
                         </ReCaptchaProvider>
                         
                     </div>
                 </div>
-
-               
             </section>
         </>
     )
