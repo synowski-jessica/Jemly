@@ -10,6 +10,7 @@ import { useState, useCallback } from "react";
 import { useReCaptcha } from "next-recaptcha-v3";
 import { SuccessAlert } from "@/app/components/alert/successAlert";
 import { FailedAlert } from "@/app/components/alert/failedAlert";
+import { useSearchParams } from "next/navigation";
 
 export function ContactForm () {
   const [isRgpdChecked, setIsRgpdChecked] = useState(false);
@@ -17,6 +18,8 @@ export function ContactForm () {
   const [formKey, setFormKey] = useState(0);
   const { executeRecaptcha } = useReCaptcha();
 
+  const searchParams = useSearchParams();
+  const [type, setType] = useState(searchParams.get("offer") ?? "");
   
    const handleSubmit = useCallback(async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -59,7 +62,7 @@ export function ContactForm () {
               <div className="flex flex-col gap-6">
                 <InputForm name="name" type="text" placeholder="Votre nom*"/>
                 <InputForm name="email" type="email" placeholder="Votre adresse email*"/>
-                <SelectForm/>
+                <SelectForm type={type}/>
                 <TextaeraForm name="message" placeholder="Votre message ...*"/>
                 <CheckboxRecaptchaForm onChange={setIsRgpdChecked}/>
                 <PrimaryButton label="Envoyer ma demande" disabled={isSubmitting || !isRgpdChecked}/>

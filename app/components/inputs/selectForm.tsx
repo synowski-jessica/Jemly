@@ -2,7 +2,13 @@
 
 import { RiArrowDownSLine } from "react-icons/ri";
 
-export function SelectForm () {   
+export function SelectForm ({type}:{type?:string}) {   
+    let defaultProject = "--Veuillez choisir une option--";
+
+    if(type === "logo") {
+        defaultProject = "Création/Refonte de logo";
+    }
+
     return (
         <div className="flex flex-col gap-2">
             <div className='relative'>
@@ -11,7 +17,7 @@ export function SelectForm () {
                     name="project"
                     required
                     className="border border-text-secondary rounded-full px-4 py-2 w-full appearance-none outline-none transition-all">
-                        <option value="">--Veuillez choisir une option--</option>
+                        <option value={defaultProject}>{defaultProject}</option>
                         <option value="Création/Refonte de logo">Création/Refonte de logo</option>
                         <option value="Charte graphique">Charte graphique</option>
                         <option value="Identité visuelle complète">Identité visuelle complète</option>

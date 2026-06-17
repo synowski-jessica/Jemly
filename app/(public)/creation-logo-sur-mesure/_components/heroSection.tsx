@@ -21,7 +21,7 @@ export function HeroSection () {
             <OfferCard title={"Offre de lancement Jemly Studio"} subtitle={"Pour les 5 premiers projets"} oldPrice={"à partir de 350€"} newPrice={"à partir de 250€"} alert={"Plus que 4 projets à ce tarif"}/>
 
             <div className="flex justify-around lg:justify-center lg:gap-40">
-              <PrimaryLink label="Profiter de l'offre" link="/#contact"/>
+              <PrimaryLink label="Profiter de l'offre" link={"/?offer=logo#contact"}/>
 
               <SecondaryLink label="Ce qui est inclus" link="/creation-logo-sur-mesure/#include"/>
             </div>

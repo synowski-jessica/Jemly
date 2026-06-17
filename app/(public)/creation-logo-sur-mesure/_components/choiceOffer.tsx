@@ -40,7 +40,7 @@ export function ChoiceOffer () {
                         </div>
 
                         <div>
-                            <SecondaryLink label={"Choisir cette offre"} link={"/#contact"} fixedWidth={true}/>
+                            <SecondaryLink label={"Choisir cette offre"} link={"/?offer=logo#contact"} fixedWidth={true}/>
                         </div>
                     </div>
 
