@@ -11,7 +11,9 @@ export const metadata: Metadata = {
   description: "Designer graphique freelance, je crée votre logo et identité visuelle sur mesure. Approche humaine, rendu rofessionnel. Devis gratuit sous 24h.",
 };
 
-export default function Home() {
+export default async function Home({ searchParams }: { searchParams: Promise<{ offer?: string }>}) {
+  const params = await searchParams;
+  const type = params.offer ?? "";
   return (
     <>
       <main>
@@ -20,7 +22,7 @@ export default function Home() {
         <Creations/>
         <About/>
         <Work/>
-        <Contact/>
+        <Contact type={type}/>
       </main>
     </>
   );

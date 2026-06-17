@@ -11,11 +11,12 @@ import { useReCaptcha } from "next-recaptcha-v3";
 import { SuccessAlert } from "@/app/components/alert/successAlert";
 import { FailedAlert } from "@/app/components/alert/failedAlert";
 
-export function ContactForm () {
+export function ContactForm ({type}:{type:string}) {
   const [isRgpdChecked, setIsRgpdChecked] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formKey, setFormKey] = useState(0);
   const { executeRecaptcha } = useReCaptcha();
+
 
   
    const handleSubmit = useCallback(async (e: React.FormEvent<HTMLFormElement>) => {
@@ -59,7 +60,7 @@ export function ContactForm () {
               <div className="flex flex-col gap-6">
                 <InputForm name="name" type="text" placeholder="Votre nom*"/>
                 <InputForm name="email" type="email" placeholder="Votre adresse email*"/>
-                <SelectForm/>
+                <SelectForm type={type}/>
                 <TextaeraForm name="message" placeholder="Votre message ...*"/>
                 <CheckboxRecaptchaForm onChange={setIsRgpdChecked}/>
                 <PrimaryButton label="Envoyer ma demande" disabled={isSubmitting || !isRgpdChecked}/>

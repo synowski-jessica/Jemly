@@ -1,4 +1,10 @@
 import { Metadata } from "next";
+import { ClientTypeSection } from "./_components/clientTypeSection";
+import { HeroSection } from "./_components/heroSection";
+import { IncludeLogoSection } from "./_components/includeLogoSection";
+import { ChoiceOffer } from "./_components/choiceOffer";
+import { CustomLogoFaqSection } from "./_components/customLogoFaqSection";
+
 
 export const metadata: Metadata = {
   title: "Création de logo sur mesure — Jemly Studio",
@@ -8,7 +14,17 @@ export const metadata: Metadata = {
 export default function CreationLogoSurMesure() {
   return (
     <>
-    <div className="mt-50">test</div>
+      <div className="flex flex-col gap-10 mt-30 mb-20 py-5 px-5  w-full max-w-324.25 mx-auto">
+        <HeroSection/>
+
+        <ClientTypeSection/>
+
+        <IncludeLogoSection/>
+
+        <ChoiceOffer/>    
+
+        <CustomLogoFaqSection/>
+      </div>
     </>
   );
 }
