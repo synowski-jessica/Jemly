@@ -9,7 +9,7 @@ export function Contact ({type}:{type:string}) {
         <>
             <section id="contact" className="pb-20 lg:py-16 xl:py-34 2xl:py-20 px-5 md:px-14 xl:px-32">
                 <div className='max-w-324.25 mx-auto flex flex-col gap-10'>
-                     <h2 className="">{`On lance`} <span className="text-accent font-bold italic">{`votre projet ?`}</span></h2>
+                     <h2 className="text-center md:text-left">{`On lance`} <span className="text-accent font-bold italic">{`votre projet ?`}</span></h2>
 
                     <div className="flex flex-col gap-10 lg:flex-row lg:gap-20 lg:items-center">
                         {/* part right */}

@@ -48,7 +48,7 @@ export function ChoiceOffer () {
                         <div className="absolute bg-accent px-2 py-1 rounded-full -top-3 -left-1 -right-1">
                             <p className="flex gap-2 items-center text-white text-note"><PiStarFourLight className=""/>{`Recommandé si vous communiquez sur plusieurs supports`}</p>
                         </div>
-                        <div className="flex flex-col gap-1">
+                        <div className="flex flex-col gap-1 mt-4 md:mt-0">
                             <p className="text-text-secondary uppercase text-note">{`Offre 2`}</p>
 
                             <p className="font-bold">{`Identité visuelle complète`}</p>

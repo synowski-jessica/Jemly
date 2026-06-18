@@ -1,6 +1,6 @@
 import { PrimaryLink } from "@/app/components/button/primaryLink";
 import { SecondaryLink } from "@/app/components/button/secondaryLink";
-import { OfferCard } from "./offerCard";
+import { OfferCard } from "../../_components/offerCard";
 
 export function HeroSection () {
     return (

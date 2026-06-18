@@ -1,4 +1,7 @@
 import { Metadata } from "next";
+import { ReasonIdentityFull } from "./_components/reasonIdentityFull";
+import { IncludeIdentitySection } from "./_components/includeIdentitySection";
+import { HeroSection } from "./_components/heroSection";
 
 export const metadata: Metadata = {
   title: "Identité visuelle complète sur mesure — Jemly Studio",
@@ -8,7 +11,13 @@ export const metadata: Metadata = {
 export default function IdentiteVisuelleComplete() {
   return (
     <>
-    <h1 className="mt-50">Jemly</h1>
+      <div className="flex flex-col gap-10 mt-30 mb-20 py-5 px-5  w-full max-w-324.25 mx-auto">
+        <HeroSection/>
+
+        <ReasonIdentityFull/>
+
+        <IncludeIdentitySection/>
+      </div>
     </>
   );
 }
