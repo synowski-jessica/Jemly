@@ -4,7 +4,6 @@ import { PiInfinityLight } from "react-icons/pi";
 import { PiEarLight } from "react-icons/pi";
 import { IncludeLogoCard } from "../../_components/includeLogoCard";
 import { PiFileImageLight } from "react-icons/pi";
-import { PiMagicWandLight } from "react-icons/pi";
 import { PiKeyLight } from "react-icons/pi";
 import { PiChatTeardropTextThin } from "react-icons/pi";
 import { PiCircleHalfTiltLight } from "react-icons/pi";
@@ -13,7 +12,7 @@ export function IncludeLogoSection () {
     return (
         <>
             <section id="include" className="mt-15 flex flex-col gap-10">
-                <div className="uppercase text-text-secondary tracking-widest">{`ce qui est inclusqu'en pens`}</div>
+                <div className="uppercase text-text-secondary tracking-widest">{`ce qui est inclus`}</div>
 
                 <p className="text-lg font-bold">{`Votre logo,`}<span className="text-accent">{` clé en main`}</span></p>
 

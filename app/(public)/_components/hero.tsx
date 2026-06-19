@@ -17,7 +17,7 @@ export default function Hero () {
                         </h2>
 
                         {/* right part */}
-                        <div className='mt-18 md:mt-0 flex flex-col md:flex-row-reverse md:justify-around'>
+                        <div className='mt-18 md:mt-0 flex flex-col md:flex-row-reverse md:justify-around md:gap-5 lg:gap-10'>
                             <div className='max-w-full p-0 md:min-w-1/2 md:p-5 xl:px-18'>
                                 <div className='flex justify-center gap-10 2xl:gap-20 relative mt-0 md:mt-32 lg:mt-36 2xl:mt-44'>
                                     <Image src="/arrow.svg" alt="flèche" width={50} height={50} 
@@ -50,13 +50,13 @@ export default function Hero () {
                                     <span className="text-accent font-bold italic">{`l'identité parfaite`}</span>
                                 </h2>
 
-                                <p className='p-0 mt-0 lg:pr-20 xl:pr-20 xl:mt-20'>{`Angélique avait l'idée en tête — elle ne trouvait pas les mots pour la mettre en forme.`}</p>
+                                <p className='p-0 mt-0 xl:mt-20'>{`Angélique avait l'idée en tête — elle ne trouvait pas les mots pour la mettre en forme.`}</p>
 
-                                <p className='p-0 mt-0 xl:mt-8 lg:mt-5 lg:pr-20 xl:pr-20'>{`Ensemble, nous avons créé un logo qui donne faim rien qu'en le regardant. C'est ça, une identité qui vous ressemble.`}</p>
+                                <p className='p-0 mt-0 xl:mt-8 lg:mt-5'>{`Ensemble, nous avons créé un logo qui donne faim rien qu'en le regardant. C'est ça, une identité qui vous ressemble.`}</p>
                                 
-                                <div className='mt-8 flex p-0 justify-around lg:pr-14 xl:justify-around xl:pr-20 xl:mt-28'>
-                                    <PrimaryLink label="Devis" link="#contact" />
-                                    <SecondaryLink label="Mes créations" link="#creations" />
+                                <div className='mt-8 flex flex-wrap gap-5 md:justify-around xl:mt-28'>
+                                    <PrimaryLink label="Devis" link="#contact" fixedWidth={true}/>
+                                    <SecondaryLink label="Mes créations" link="#creations"  fixedWidth={true} />
                                 </div>
                             </div>
                         </div>

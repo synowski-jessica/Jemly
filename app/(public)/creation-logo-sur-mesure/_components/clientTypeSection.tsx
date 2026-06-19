@@ -14,30 +14,30 @@ export function ClientTypeSection () {
 
                 <p>{`Mes services s'adressent aux porteurs de projets, créatifs et structures qui veulent une identité visuelle unique, loin des générateurs automatiques.`}</p>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 3xl:grid-cols-4 gap-10">
                     <CardWithIcon 
                         title={"Artisanat & Création"} 
                         Icon={HiOutlinePaintBrush} 
-                        paragraph1={"Vous vendez ce que vous concevez de vos mains ou de votre esprit."} 
-                        paragraph2={"Votre logo doit transmettre la qualité de votre savoir-faire, votre passion et votre sensibilité unique."}/>
+                        paragraph1={"Vous vendez ce que vous créez de vos mains ou de votre esprit."} 
+                        paragraph2={"Votre logo doit transmettre cette sensibilité unique au premier regard."}/>
 
                     <CardWithIcon 
                         title={"TPE & Petites Entreprises"} 
                         Icon={PiStorefrontThin} 
-                        paragraph1={"Vous souhaitez vous démarquer radicalement de vos concurrents."} 
-                        paragraph2={"Ensemble, nous construisons une identité visuelle cohérente, mémorable et alignée avec vos ambitions commerciales."}/>
+                        paragraph1={"Vous voulez vous démarquer vraiment de vos concurrents."} 
+                        paragraph2={"Une identité forte et cohérente, c'est ce qui fait la différence."}/>
 
                     <CardWithIcon 
                         title={"Freelance & Indépendants"} 
                         Icon={PiBriefcaseLight} 
                         paragraph1={"Vous lancez votre activité ou vous vous repositionnez."} 
-                        paragraph2={"Il est temps d'adopter une image de marque forte et professionnelle qui inspire immédiatement confiance à vos futurs clients."}/>
+                        paragraph2={"Il est temps d'avoir une image qui inspire confiance immédiatement."}/>
 
                     <CardWithIcon 
                         title={"Associations & Collectifs"} 
                         Icon={PiHandHeartLight} 
-                        paragraph1={"Votre image doit être à la hauteur de l'impact et des valeurs de votre mission"} 
-                        paragraph2={"Donnons à votre structure la visibilité et la crédibilité qu'elle mérite pour fédérer votre communauté."}/>
+                        paragraph1={"Votre mission mérite une image à sa hauteur."} 
+                        paragraph2={"Donnons à votre structure la visibilité et la crédibilité qu'elle mérite."}/>
                 </div>
             </section>
         </>
