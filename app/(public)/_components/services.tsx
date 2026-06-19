@@ -38,7 +38,7 @@ export default function Services () {
 
                                 <p>{`Tout ce qu'il faut pour une image cohérente et vraiment impactante sur tous vos supports (carte de visite, flyer ...)`}</p>
 
-                                <a href="/identite_visuelle_complete" className='text-text-secondary mt-5'>{`En savoir plus sur ce service -->`}</a> 
+                                <a href="/identite-visuelle-complete" className='text-text-secondary mt-5'>{`En savoir plus sur ce service -->`}</a> 
                             </div>    
                         </div>
                     </div>

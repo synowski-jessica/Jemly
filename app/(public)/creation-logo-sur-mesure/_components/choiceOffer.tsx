@@ -12,7 +12,7 @@ export function ChoiceOffer () {
 
                 <p className="text-lg font-bold">{`L'offre faite `}<span className="text-accent">{`pour vous`}</span></p>
 
-                <p>{`Tu hésite entre les deux ? Voilà la différence en un coup d'oeil. Les deux incluent tout ce qui précède - l'identité complète va simplement plus loin`}</p>
+                <p>{`Vous hésitez entre les deux ? Voilà la différence en un coup d'oeil. Les deux incluent tout ce qui précède - l'identité complète va simplement plus loin`}</p>
 
                 <div className="flex flex-col gap-10 lg:flex-row">
                     <div className="border border-tag-secondary-border rounded-lg px-4 py-6 flex flex-col gap-6 flex-1">
@@ -39,8 +39,8 @@ export function ChoiceOffer () {
                             <p className="flex gap-2 items-center"><PiXLight  className="text-text-muted"/>{`Mockups & mise en situation`}</p>
                         </div>
 
-                        <div>
-                            <SecondaryLink label={"Choisir cette offre"} link={"/?offer=logo#contact"} fixedWidth={true}/>
+                        <div className="flex">
+                            <SecondaryLink label={"Choisir cette offre"} link={"/?offer=logo#contact"}/>
                         </div>
                     </div>
 
@@ -48,7 +48,7 @@ export function ChoiceOffer () {
                         <div className="absolute bg-accent px-2 py-1 rounded-full -top-3 -left-1 -right-1">
                             <p className="flex gap-2 items-center text-white text-note"><PiStarFourLight className=""/>{`Recommandé si vous communiquez sur plusieurs supports`}</p>
                         </div>
-                        <div className="flex flex-col gap-1">
+                        <div className="flex flex-col gap-1 mt-4 md:mt-0">
                             <p className="text-text-secondary uppercase text-note">{`Offre 2`}</p>
 
                             <p className="font-bold">{`Identité visuelle complète`}</p>
@@ -71,8 +71,8 @@ export function ChoiceOffer () {
                             <p className="flex gap-2 items-center"><PiCheckLight  className="text-accent"/>{`Mockups & mise en situation`}</p>
                         </div>
 
-                        <div>
-                            <PrimaryLink label={"Choisir cette offre"} link={"/identite-visuelle-complete"} fixedWidth={true}/>
+                        <div className="flex">
+                            <PrimaryLink label={"Choisir cette offre"} link={"/identite-visuelle-complete"}/>
                         </div>
                     </div>
                 </div>

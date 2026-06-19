@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import Link from "next/link"
 
 const items = [
   {
@@ -20,6 +21,18 @@ const items = [
   },
   {
     value: "item-2",
+    trigger: "Est-ce que je peux commencer par le logo et ajouter la charte graphique plus tard ?",
+    content: (
+        <>
+          <p>
+            {`Tout à fait. Si vous préférez démarrer avec le logo seul et compléter avec une identité visuelle dans quelques mois, c'est possible. On en discute lors du premier échange.`}
+          </p>
+          <Link href="/identite-visuelle-complete" className="text-text-secondary font-bold underline">{`Découvrir l'offre identité visuelle à partir de 450€ →`}</Link>
+        </>
+      ),
+  },
+  {
+    value: "item-3",
     trigger: "Et si le résultat ne me plaît pas ?",
     content:
       (
@@ -29,7 +42,7 @@ const items = [
       ),
   },
   {
-    value: "item-3",
+    value: "item-4",
     trigger: "Je n'ai pas d'idée précise, est ce que ça pose problème ?",
     content:
       (
@@ -44,7 +57,7 @@ const items = [
 
 export function AccordionFaqCustomLogo() {
   return (
-    <Accordion defaultValue={["item-1"]}>
+    <Accordion defaultValue={[]}>
       {items.map((item) => (
         <AccordionItem key={item.value} value={item.value} className="rounded-xl shadow-md overflow-hidden border-l border-r border-gray-100 ">
           <AccordionTrigger className="bg-rose-card rounded-md">

@@ -1,6 +1,6 @@
 import { ComponentType } from "react";
 
-export function ClientTypeCard({title, Icon, paragraph1, paragraph2}:{title:string, Icon:ComponentType<{ className?: string }>, paragraph1:string, paragraph2:string}) {
+export function CardWithIcon({title, Icon, paragraph1, paragraph2}:{title:string, Icon:ComponentType<{ className?: string }>, paragraph1:string, paragraph2?:string}) {
     return (
         <>
             <div className="shadow-md rounded-lg flex flex-col items-center gap-5 p-4">

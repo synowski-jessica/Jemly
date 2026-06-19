@@ -4,6 +4,7 @@ import { HeroSection } from "./_components/heroSection";
 import { IncludeLogoSection } from "./_components/includeLogoSection";
 import { ChoiceOffer } from "./_components/choiceOffer";
 import { CustomLogoFaqSection } from "./_components/customLogoFaqSection";
+import { CtaSection } from "./_components/ctaSection";
 
 
 export const metadata: Metadata = {
@@ -24,6 +25,8 @@ export default function CreationLogoSurMesure() {
         <ChoiceOffer/>    
 
         <CustomLogoFaqSection/>
+
+        <CtaSection/>
       </div>
     </>
   );

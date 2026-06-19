@@ -1,6 +1,6 @@
 import { PrimaryLink } from "@/app/components/button/primaryLink";
 import { SecondaryLink } from "@/app/components/button/secondaryLink";
-import { OfferCard } from "./offerCard";
+import { OfferCard } from "../../_components/offerCard";
 
 export function HeroSection () {
     return (
@@ -18,9 +18,9 @@ export function HeroSection () {
 
             <p>{`Ou peut-être que vous partez de zéro, sans idée précise : c’est tout aussi bien. J’aime justement partir de là, échanger, creuser, et faire émerger ensemble une direction qui vous ressemble vraiment.`}</p>
             
-            <OfferCard title={"Offre de lancement Jemly Studio"} subtitle={"Pour les 5 premiers projets"} oldPrice={"à partir de 350€"} newPrice={"à partir de 250€"} alert={"Plus que 4 projets à ce tarif"}/>
+            <OfferCard title={"Offre de lancement"} subtitle={"Pour les 5 premiers projets"} oldPrice={"à partir de 350€"} newPrice={"à partir de 250€"} alert={"Plus que 4 projets à ce tarif"}/>
 
-            <div className="flex justify-around lg:justify-center lg:gap-40">
+            <div className="flex flex-wrap gap-5 md:justify-center md:gap-40">
               <PrimaryLink label="Profiter de l'offre" link={"/?offer=logo#contact"}/>
 
               <SecondaryLink label="Ce qui est inclus" link="/creation-logo-sur-mesure/#include"/>

@@ -59,7 +59,7 @@ export function Footer () {
 
                     <div className='mt-10 border-t border-accent-2 flex flex-col items-center gap-2 lg:flex-row lg:justify-between'>
                         <div className='mt-5'>
-                            <p className='text-note'>{`© 2025 Jemly - Tous droits réservés.`}</p>
+                            <p className='text-note'>{`© 2026 Jemly - Tous droits réservés.`}</p>
                         </div>
 
                         <div className='flex gap-3 lg:mt-5'>

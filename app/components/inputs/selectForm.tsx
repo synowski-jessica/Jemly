@@ -9,6 +9,11 @@ export function SelectForm ({type}:{type?:string}) {
         defaultProject = "Création/Refonte de logo";
     }
 
+     if(type === "identite") {
+        defaultProject = "Identité visuelle complète";
+    }
+    
+
     return (
         <div className="flex flex-col gap-2">
             <div className='relative'>
