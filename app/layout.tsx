@@ -13,7 +13,7 @@ export const metadata = {
     template: '%s | Jemly Studio',
   },
   icons: {
-    icon: '/icon192.png',
+    icon: '/icon-192.png',
   },
   verification: {
     google: "cxHoPuqsLplSujy39vYeECHJCdTNdJkYVWggFtOA9_c",
