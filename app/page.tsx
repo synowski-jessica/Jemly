@@ -8,7 +8,7 @@ import { Contact } from "./(public)/_components/contact/contact";
 
 export const metadata: Metadata = {
   title: "Jemly Studio — Création de logo et identité visuelle sur mesure",
-  description: "Designer graphique freelance, je crée votre logo et identité visuelle sur mesure. Approche humaine, rendu rofessionnel. Devis gratuit sous 24h.",
+  description: "Designer graphique freelance, je crée votre logo et identité visuelle sur mesure. Approche humaine, rendu professionnel. Devis gratuit sous 24h.",
 };
 
 export default async function Home({ searchParams }: { searchParams: Promise<{ offer?: string }>}) {
