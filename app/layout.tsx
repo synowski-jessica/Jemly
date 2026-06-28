@@ -1,6 +1,7 @@
 import { Footer } from "./(public)/_components/footer";
 import GoogleAnalytics from "./(public)/_components/googleAnalytics";
 import Header from "./(public)/_components/header";
+import MicrosoftClarity from "./(public)/_components/MicrosoftClarity";
 import RegisterSW from "./components/RegisterSW";
 import "./globals.css";
 
@@ -28,6 +29,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">
           <GoogleAnalytics/>
+          <MicrosoftClarity/>
           {children}
         </main>
         <Footer />
