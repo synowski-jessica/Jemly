@@ -7,9 +7,17 @@ import Work from "./(public)/_components/work/work";
 import { Contact } from "./(public)/_components/contact/contact";
 
 export const metadata: Metadata = {
-  title: "Jemly Studio — Création de logo et identité visuelle sur mesure",
-  description: "Designer graphique freelance, je crée votre logo et identité visuelle sur mesure. Approche humaine, rendu professionnel. Devis gratuit sous 24h.",
-};
+  title: {
+    absolute: "Jemly Studio | Création de logo et identité visuelle sur mesure",
+  },
+  description: "Designer graphique freelance basé à Chambles dans la Loire, je crée votre logo et identité visuelle sur mesure partout en France. Approche humaine, rendu professionnel. Devis gratuit sous 24h.",
+  openGraph: {
+    title: "Jemly Studio | Création de logo et identité visuelle sur mesure",
+    description: "Designer graphique freelance basé à Chambles dans la Loire, je crée votre logo et identité visuelle sur mesure partout en France. Approche humaine, rendu professionnel. Devis gratuit sous 24h.",
+    url: 'https://jemly-studio.fr',
+    type: 'website',
+  },
+}
 
 export default async function Home({ searchParams }: { searchParams: Promise<{ offer?: string }>}) {
   const params = await searchParams;

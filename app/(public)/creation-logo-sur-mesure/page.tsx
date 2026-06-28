@@ -8,9 +8,15 @@ import { CtaSection } from "./_components/ctaSection";
 
 
 export const metadata: Metadata = {
-  title: "Création de logo sur mesure — Jemly Studio",
+  title: "Création de logo sur mesure",
   description: "Un logo unique qui vous ressemble, pensé pour durer. De l'écoute au fichier final, je construis avec vous une identité visuelle forte et cohérente.",
-};
+  openGraph: {
+    title: "Création de logo sur mesure | Jemly Studio",
+    description: "Un logo unique qui vous ressemble, pensé pour durer. De l'écoute au fichier final, je construis avec vous une identité visuelle forte et cohérente.",
+    url: 'https://jemly-studio.fr/creation-logo-sur-mesure',
+    type: 'website',
+  },
+}
 
 export default function CreationLogoSurMesure() {
   return (

@@ -2,16 +2,13 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-    title: "Mentions légales | Jemly Studio",
-    description:
-        "Informations légales relatives à l'éditeur, l'hébergement et l'utilisation du site Jemly Studio.",
-    openGraph: {
-        title: "Mentions légales | Jemly Studio",
-        description:
-        "Informations légales relatives à l'éditeur, l'hébergement et l'utilisation du site Jemly Studio.",
-        type: "website",
+  title: "Mentions légales",
+  description: "Informations légales relatives à l'éditeur, l'hébergement et l'utilisation du site Jemly Studio.",
+  robots: {
+    index: false,
+    follow: false,
   },
-};
+}
 
 export default function MentionsLegales() {
   return (

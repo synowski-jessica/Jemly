@@ -7,11 +7,27 @@ import "./globals.css";
 
 
 export const metadata = {
+  metadataBase: new URL('https://jemly.fr'),
+  title: {
+    default: 'Jemly Studio | Création de logo et identité visuelle sur mesure',
+    template: '%s | Jemly Studio',
+  },
   icons: {
     icon: '/icon192.png',
   },
   verification: {
     google: "cxHoPuqsLplSujy39vYeECHJCdTNdJkYVWggFtOA9_c",
+  },
+  authors: [{ name: 'Jemly Studio' }],
+  creator: 'Jemly Studio',
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    siteName: 'Jemly Studio',
+    locale: 'fr_FR',
+    type: 'website',
   },
 }
 
