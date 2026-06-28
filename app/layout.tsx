@@ -1,7 +1,7 @@
 import { Footer } from "./(public)/_components/footer";
 import GoogleAnalytics from "./(public)/_components/googleAnalytics";
 import Header from "./(public)/_components/header";
-import MicrosoftClarity from "./(public)/_components/MicrosoftClarity";
+import MicrosoftClarity from "./(public)/_components/microsoftClarity";
 import RegisterSW from "./components/RegisterSW";
 import "./globals.css";
 
