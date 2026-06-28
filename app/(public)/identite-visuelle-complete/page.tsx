@@ -6,9 +6,15 @@ import { CtaSection } from "./_components/ctaSection";
 import { IdentityFaqSection } from "./_components/identityFaqSection";
 
 export const metadata: Metadata = {
-  title: "Identité visuelle complète sur mesure — Jemly Studio",
+  title: "Identité visuelle complète sur mesure",
   description: "Logo, palette de couleurs, typographies, charte graphique PDF — tout ce qu'il faut pour une image cohérente sur tous vos supports.",
-};
+  openGraph: {
+    title: "Identité visuelle complète sur mesure | Jemly Studio",
+    description: "Logo, palette de couleurs, typographies, charte graphique PDF — tout ce qu'il faut pour une image cohérente sur tous vos supports.",
+    url: 'https://jemly-studio.fr/identite-visuelle-complete',
+    type: 'website',
+  },
+}
 
 export default function IdentiteVisuelleComplete() {
   return (

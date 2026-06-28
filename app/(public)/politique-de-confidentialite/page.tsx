@@ -3,17 +3,13 @@ import ColorTag from "@/app/components/tag/colorTag";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-    title: "Politique de confidentialité | Jemly Studio",
-    description:
-        "Découvrez comment Jemly Studio collecte, utilise et protège les données personnelles transmises via le site.",
-    openGraph: {
-        title: "Politique de confidentialité | Jemly Studio",
-        description:
-         "Découvrez comment Jemly Studio collecte, utilise et protège les données personnelles transmises via le site.",
-        type: "website",
+  title: "Politique de confidentialité",
+  description: "Découvrez comment Jemly Studio collecte, utilise et protège les données personnelles transmises via le site.",
+  robots: {
+    index: false,
+    follow: false,
   },
-};
-
+}
 
 export default function PolitiqueDeConfidentialite () {
     return (
