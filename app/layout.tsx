@@ -1,4 +1,5 @@
 import { Footer } from "./(public)/_components/footer";
+import GoogleAnalytics from "./(public)/_components/googleAnalytics";
 import Header from "./(public)/_components/header";
 import RegisterSW from "./components/RegisterSW";
 import "./globals.css";
@@ -26,6 +27,7 @@ export default function RootLayout({
        <body className="min-h-full flex flex-col bg-blue">
         <Header />
         <main className="flex-1">
+          <GoogleAnalytics/>
           {children}
         </main>
         <Footer />
